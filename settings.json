@@ -1,0 +1,74 @@
+{
+	// Preferences
+	"disable_ai": true,
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	
+	// Window
+	"title_bar": {
+		"show_sign_in": false
+	},
+	
+	// Fonts
+	"ui_font_size": 16,
+	"buffer_font_family": "Iosevka Nerd Font",
+	"buffer_font_size": 13,
+	
+	// Themes
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "One Dark - Darkened" // github.com/pavles6/one-dark-darkened
+	},
+	"icon_theme": "Catppuccin Mocha", // github.com/catppuccin/zed-icons
+	
+	// Editor
+	"hard_tabs": true, // Use tabs instead of spaces
+	"tab_size": 4,
+	"format_on_save": "off",
+	"remove_trailing_whitespace_on_save": false,
+	"ensure_final_newline_on_save": false,
+	
+	// Programming Languages
+	"languages": {
+		"Python": {
+			"ensure_final_newline_on_save": true,
+			"language_servers": [
+				"pylsp",
+				
+				"!basedpyright",
+				"!ruff"
+			]
+		}
+	},
+	
+	// Language Servers
+	"lsp": {
+		// Python LSP
+		"pylsp": {
+			"settings": {
+				"plugins": {
+					"pycodestyle": {
+						"ignore": [
+							"W293", // Blank line contains whitespace
+							"E302"  // Expected 2 blank lines, found [n]
+						]
+					},
+					
+					"rope": {
+						"enabled": false // Disables automatic creation of ".ropeproject" folder
+					}
+				}
+			},
+			"initialization_options": {
+				"workspace": {
+					// Detects ".venv" folder for completions
+					"venvPath": ".",
+					"venv": ".venv"
+				}
+			}
+		}
+	}
+}
