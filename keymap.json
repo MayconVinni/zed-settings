@@ -1,0 +1,8 @@
+[
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-m": "language_selector::Toggle" // Language selector
+		}
+	}
+]
