@@ -1,20 +1,22 @@
 {
-	// Preferences
+	// Artificial Intelligence
 	"disable_ai": true,
+
+	// Privacy
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
 	},
-	
-	// Window
-	"title_bar": {
-		"show_sign_in": false
-	},
-	
+
+	// Window & Layout
+	"title_bar": { "show_sign_in": false },
+	"tab_bar": { "show_nav_history_buttons": false }, // Hides the left & right arrows on the tab bar
+	"tabs": { "file_icons": true },
+
 	// Fonts
 	"buffer_font_family": "Iosevka Nerd Font", // nerdfonts.com/font-downloads#:~:text=Iosevka
 	"buffer_font_size": 13,
-	
+
 	// Themes
 	"theme": {
 		"mode": "system",
@@ -22,27 +24,21 @@
 		"dark": "One Dark - Darkened" // github.com/pavles6/one-dark-darkened
 	},
 	"icon_theme": "Catppuccin Mocha", // github.com/catppuccin/zed-icons
-	
+
 	// Editor
 	"hard_tabs": true, // Use tabs instead of spaces
 	"tab_size": 4,
 	"format_on_save": "off",
-	"remove_trailing_whitespace_on_save": false,
 	"ensure_final_newline_on_save": false,
-	
+
 	// Programming Languages
 	"languages": {
 		"Python": {
 			"ensure_final_newline_on_save": true,
-			"language_servers": [
-				"pylsp",
-				
-				"!basedpyright",
-				"!ruff"
-			]
+			"language_servers": ["pylsp", "!basedpyright", "!ruff"]
 		}
 	},
-	
+
 	// Language Servers
 	"lsp": {
 		// Python LSP
@@ -55,10 +51,7 @@
 							"E302"  // Expected 2 blank lines, found [n]
 						]
 					},
-					
-					"rope": {
-						"enabled": false // Disables automatic creation of ".ropeproject" folder
-					}
+					"rope": { "enabled": false } // Disables automatic creation of ".ropeproject" folder
 				}
 			},
 			"initialization_options": {
