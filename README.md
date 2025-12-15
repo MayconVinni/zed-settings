@@ -4,7 +4,7 @@ Settings, keymaps & etc written for Zed to my own liking.
 
 ## Preview
 
-[Screenshot](_assets/screenshot.png)
+![Screenshot](_assets/screenshot.png)
 
 Screenshot taken at 12/14/2025
 
