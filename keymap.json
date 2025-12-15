@@ -1,8 +1,14 @@
 [
 	{
+		"bindings": {
+			"ctrl-o": "workspace::OpenFiles", // Open files
+			"ctrl-shift-o": "workspace::Open" // Open folder
+		}
+	},
+	{
 		"context": "Editor",
 		"bindings": {
-			"ctrl-m": "language_selector::Toggle" // Language selector
+			"ctrl-m": "language_selector::Toggle" // Toggle language selector
 		}
 	}
 ]
