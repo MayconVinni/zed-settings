@@ -47,6 +47,8 @@ Python:
 
 ## Keymaps file
 
-| Context | Binding  | Action                   |
-| ------- | -------- | ------------------------ |
-| Editor  | `CTRL-M` | Toggle language selector |
+| Context    | Binding        | Action                   |
+| ---------- | -------------- | ------------------------ |
+| \<global\> | `CTRL-O`       | Open files               |
+| \<global\> | `CTRL-Shift-O` | Open folder              |
+| Editor     | `CTRL-M`       | Toggle language selector |
