@@ -40,6 +40,7 @@ Python:
 | E302 | Expected 2 blank lines, found 0-1 |
 | E303 | Too many blank lines (3+)         |
 | E501 | Line too long (n > 79 characters) |
+| W191 | Indentation contains tabs         |
 | W293 | Blank line contains whitespace    |
 
 - Disables automatic creation of `.ropeproject` directory
