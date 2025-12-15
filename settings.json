@@ -1,8 +1,6 @@
 {
-	// Artificial Intelligence
+	// AI & Privacy
 	"disable_ai": true,
-
-	// Privacy
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
@@ -13,11 +11,7 @@
 	"tab_bar": { "show_nav_history_buttons": false }, // Hides the left & right arrows on the tab bar
 	"tabs": { "file_icons": true },
 
-	// Fonts
-	"buffer_font_family": "Iosevka Nerd Font", // nerdfonts.com/font-downloads#:~:text=Iosevka
-	"buffer_font_size": 13,
-
-	// Themes
+	// Theme
 	"theme": {
 		"mode": "system",
 		"light": "One Light",
@@ -26,10 +20,12 @@
 	"icon_theme": "Catppuccin Mocha", // github.com/catppuccin/zed-icons
 
 	// Editor
+	"buffer_font_family": "Iosevka Nerd Font", // nerdfonts.com/font-downloads#:~:text=Iosevka
+	"buffer_font_size": 13,
+	"ensure_final_newline_on_save": false,
+	"format_on_save": "off",
 	"hard_tabs": true, // Use tabs instead of spaces
 	"tab_size": 4,
-	"format_on_save": "off",
-	"ensure_final_newline_on_save": false,
 
 	// Programming Languages
 	"languages": {
@@ -47,16 +43,18 @@
 				"plugins": {
 					"pycodestyle": {
 						"ignore": [
-							"W293", // Blank line contains whitespace
-							"E302"  // Expected 2 blank lines, found [n]
+							"E302", // Expected 2 blank lines, found 0-1
+							"E303", // Too many blank lines (3+)
+							"E501", // Line too long (n > 79 characters)
+							"W293"  // Blank line contains whitespace
 						]
 					},
-					"rope": { "enabled": false } // Disables automatic creation of ".ropeproject" folder
+					"rope": { "enabled": false } // Disables automatic creation of ".ropeproject" directory
 				}
 			},
 			"initialization_options": {
 				"workspace": {
-					// Detects ".venv" folder for completions
+					// Detects ".venv" directory for code completion
 					"venvPath": ".",
 					"venv": ".venv"
 				}
